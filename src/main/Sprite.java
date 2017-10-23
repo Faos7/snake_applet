@@ -20,7 +20,7 @@ public enum Sprite {
     Sprite(String textureName){
         try {
             this.texture = TextureLoader.getTexture("PNG", new FileInputStream(
-                    new File("/home/faos7/IdeaProjects/snake_applet_demo/res/" + textureName + ".png")));
+                    new File("/home/faos7/IdeaProjects/snake_applet/res/" + textureName + ".png")));
         } catch (IOException e) {
             e.printStackTrace();
         }

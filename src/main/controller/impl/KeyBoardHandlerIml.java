@@ -20,6 +20,11 @@ public class KeyBoardHandlerIml implements KeyBoardHandler {
             if (Keyboard.getEventKeyState()){
                 switch (Keyboard.getEventKey()){
                     case Keyboard.KEY_ESCAPE:
+                        //for desktop usage
+                        if(GUI.isIsLoosed() || GUI.isIsExitRequested()){
+                            System.exit(1);
+                        }
+                        //for desktop usage
                             GUI.setIsExitRequested(true);
                         break;
                     case Keyboard.KEY_SPACE:
